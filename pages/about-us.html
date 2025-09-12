@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiore</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <style>
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: peyda, sans-serif;
+        }
+        .about{
+            width: 100%;
+            height: 79rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-content{
+            background-color: #1f5c3f93;
+            width: 95%;
+            height: 95%;
+            border-radius: 10px;
+            color: rgba(242,237,231);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding-top: 2.5rem;
+        }
+        .content-img{
+            background-color: rgba(242,237,231);
+            width: 80%;
+            height: 30%;
+            border-radius: 0px 0px 45% 45%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .content-vid{
+           /* position: fixed; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 0px 0px 45% 45%; 
+        }
+        .content-text{
+            /* background-color: rgba(242,237,231); */
+            width: 85%;
+            height: 65%;
+        }
+        .text-header{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-header h2{
+            font-size: 35px;
+        }
+        .text-header h1{
+            color: #505050;
+            font-size: 60px;
+            font-family: didot, sans-serif;
+            transform: translate(0px,-60px);
+        }
+        .text-header h5{
+            color: #505050;
+            font-family: didot, sans-serif;
+            transform: translate(0px,-130px);
+        }
+        .text-main{
+            transform: translate(0px,-130px);
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .staff{
+            width: 100%;
+            height: 70rem;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;          
+        }
+        .staff-card{
+            width: 85%;
+            height: 10rem;
+            background-color: #3a5a4b69;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .staff-card-img{
+            width: 7rem;
+            height: 7rem;
+            /* background-color: white; */
+            border-radius: 50%;
+        }
+        .staff-card-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .staff-card-content{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .staff-card-content h5{
+            transform: translate(0px,-10px);
+        }
+        .staff-card-content h2{
+            transform: translate(0px,10px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul>
+                <li><a href="../index.html">خانه</a></li>
+                <li><a href="menu.html">منو</a></li>
+                <li><a href="about-us.html">درباره ما</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="../images/photo_2025-08-13_00-55-58.jpg" alt="logo" class="logo">
+        </div>
+        <div class="home-div">
+            <a href="../index.html">
+                <img src="../images/heim.png" alt="" class="home-icon">
+            </a>
+        </div>
+     </header>
+     <main>
+        <section class="about">
+            <div class="about-content">
+                <div class="content-img">
+                    <!-- <img src="../images/فیور.png" alt="" width="100%"> -->
+                     <video autoplay muted loop playsinline class="content-vid" src="../images/video/1d638bc2-9696-4514-9e98-3ce07a98015b.mp4"></video>
+                </div>
+                <div class="content-text">
+                    <div class="text-header">
+                        <h2>داستان فیوره</h2>
+                        <h1>FIORE</h1>
+                        <h5>CAFE</h5>
+                    </div>
+                    <div class="text-main">
+                        <p>
+                            کافه فیوره، به معنای گل، بیش از یک دهه است که در دنیای قهوه شکوفا شده و همراه عاشقان این نوشیدنی بوده است. فیوره تنها یک کافه نیست؛ خانه‌ای است برای خانواده‌ای از کسانی که قهوه را نه صرفاً یک نوشیدنی، بلکه تجربه‌ای اصیل و هنری می‌دانند. ما در فیوره همواره تلاش کرده‌ایم محیطی حرفه‌ای و در عین حال صمیمی فراهم کنیم؛ جایی که هر فنجان قهوه بازتابی از کیفیت، دقت و تعهد ما به شماست. حضور شما، فیوره را از یک کافه ساده فراتر برده و آن را به خانواده‌ای تبدیل کرده است که در آن آرامش، گفتگو، خاطره‌سازی و اعتماد جریان دارد. اینجا، هر روز با عطر قهوه و لحظه‌هایی که با شما به اشتراک گذاشته می‌شود، معنای تازه‌ای پیدا می‌کند.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="staff">
+            <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>فاطمه عزیزی</h2>
+                    <h5>مدیریت کافه فیوره</h5>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>امیررضا روزفراخ</h2>
+                    <h5>باریستا</h5>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>متانت رعنایی</h2>
+                    <h5>مدیریت سالن</h5>
+                </div>
+            </div>
+            <!-- <div class="staff-card">
+                <div class="staff-card-img">
+
+                </div>
+                <div class="staff-card-content">
+                    <h2>متین رعنایی</h2>
+                    <h5>سرآشپز</h5>
+                </div>
+            </div> -->
+            <!-- <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>متین روزفراح</h2>
+                    <h5>کمک باریستا</h5>
+                </div>
+            </div> -->
+            <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>فائزه رمضانی</h2>
+                    <h5>ادمین و تولید محتوا</h5>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>فرجاد طالب پور</h2>
+                    <h5>توسعه دهنده وب</h5>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-card-img">
+                    <img src="../images/staff/non.jfif" alt="">
+                </div>
+                <div class="staff-card-content">
+                    <h2>رضا فریار</h2>
+                    <h5>UI/UX دیزاینر</h5>
+                </div>
+            </div>
+        </section>
+     </main>
+     <footer>
+        <div class="location-icon-div">
+            <a href="https://neshan.org/maps/places/_bLvJuydkut3#c37.471-57.323-18z-0p">
+                <img src="../images/location-dot-solid-full.svg" alt="" class="location-icon">
+            </a>
+        </div>
+        <div class="instagram-icon-div">
+            <a href="https://www.instagram.com/fiore.cafee?igsh=MWxmZ2JjbDMycXdtMA==">
+                <img src="../images/instagram (1).png" alt="" class="instagram-icon">
+            </a>
+        </div>
+     </footer>
+</body>
+</html>

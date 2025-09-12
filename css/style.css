@@ -1,0 +1,333 @@
+@font-face {
+  font-family: 'FarDiplomat';
+  src: url('../font/IranNastaliq&Help-fontyab.com/IranNastaliq.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IranNastaliq';
+  src: url('../font/Far_Diplomat/Far_Diplomat.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kaqaz';
+  src: url('../font/Kaghaz.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Golpaygani';
+  src: url('../font/SD-Golpayegani/SD-Golpayegani/Grunge.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Satisfy';
+  src: url('../font/Satisfy/Satisfy-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Alex';
+  src: url('../font/AlexBrush-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Corentina';
+  src: url('../font/Corinthia-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'peyda';
+  src: url('../font/peyda/PeydaFaNum-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'didot';
+  src: url('../font/GFSDidot-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'inter';
+  src: url('../font/Inter-VariableFont_opsz/wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'anton';
+  src: url('../font/Anton-Regular.ttf') format('truetype');
+}
+body{
+    font-family: 'IranNastaliq', sans-serif;
+    background-color: rgba(242,237,231);
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+header{
+    background-color: #3a5a4b;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+footer{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+header div{
+    width: 33.33%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.home-icon{
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1) brightness(2);
+    transform: translate(-20px,-6px);
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.location-icon{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 8px;
+}
+.instagram-icon-div{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+}
+.instagram-icon-div img{
+    width: 3rem;
+    height: 3rem;
+}
+.hamburger-menu {
+  background: #3A5A4B;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+  border-bottom-right-radius: 50% 20%;
+}
+
+/* همبرگر */
+.menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  z-index: 1001; /* روی منو بمونه */
+}
+
+.menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.4s;
+  transform-origin: center;
+}
+
+/* منوی مخفی */
+.hamburger-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: -100%; /* مخفی */
+  width: 250px;
+  height: 100vh; /* کل ارتفاع */
+  background: #3A5A4B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 60px; /* فاصله از بالا */
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.hamburger-menu ul li {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hamburger-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.menu-toggle:checked + .menu-btn span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* وقتی فعال شد */
+.menu-toggle:checked + .menu-btn + ul {
+  right: 0;
+}
+
+/* دسکتاپ */
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  .hamburger-menu ul {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    background: transparent;
+    right: 0;
+    transition: none;
+  }
+  .hamburger-menu ul li {
+    border: none;
+  }
+}
+
+  /* کارت ها */
+   .cards{
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 1.5rem;
+  }
+  .card{
+    background-color: #3a5a4b;
+    width: 6rem;
+    height: 8rem;
+    border-radius: 10px;
+    /* corner-shape:squircle; */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.288);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    flex-direction: column;
+    transition: 2ms ease-in;
+  }
+  .card:active{
+    transform: scale(0.95);
+  }
+  .card-image{
+    width: 100%;
+    height: 70%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1rem;
+    filter: invert(1) brightness(2);
+  }
+  .card-amount{
+    width: 100%;
+    height: 30%;
+    color: rgba(242,237,231);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .location-icon-div{
+    background-color: #3A5A4B;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+  .location-icon-div:active{
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+
+  /* ------- */
+
+
+
+  .hidden {
+    display: none;
+}
+.products {
+    padding: 1rem;
+    font-family: peyda, sans-serif;
+    font-size: 12px;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+.product-card {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: #3a5a4b;
+    color: rgba(242,237,231);
+}
+.product-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.back-btn{
+  background-color: #3A5A4B;
+  border: none;
+  border-radius: 10px;
+  width: 6rem;
+  height: 2rem;
+  color: rgba(242,237,231);
+  margin-top: 3rem;
+}
+.product-title{
+  font-family: anton, sans-serif;
+  letter-spacing: 3px;
+  color:white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  /* border: solid black 1px; */
+  background-color: #3A5A4B;
+  border-radius: 8px;
+  width: 8rem;
+  transform: translate(-115px);
+}
